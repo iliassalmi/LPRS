@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lycée Robert Schuman</title>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Education master is one of the best educational html template, it's suitable for all education websites like university,college,school,online education,tution center,distance education,computer education">
+    <meta name="keyword" content="education html template, university template, college template, school template, online education template, tution center template">
+    <!-- FAV ICON(BROWSER TAB ICON) -->
+    <link rel="shortcut icon" href="../images/fav.ico" type="image/x-icon">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CJosefin+Sans:600,700" rel="stylesheet">
+    <!-- FONTAWESOME ICONS -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- ALL CSS FILES -->
+    <link href="../css/materialize.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
+    <link href="../css/style-mob.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+  <?php include('header.php'); ?>
+    <!--END HEADER SECTION-->
+
+
+
+    <!--SECTION START-->
+    <section>
+        <div class="container com-sp">
+            <div class="row">
+                <div class="cor about-sp">
+                    <div class="ed-about-tit">
+                        <div>
+                            <div class="ho-event pg-eve-main pg-blog">
+                                <ul>
+									 <li>
+
+                                        <div class="pg-eve-desc pg-blog-desc">
+                                            <a href="event-register.php">
+                                                <h4>BAC STI2D</h4>
+                                            </a>
+
+											<img src="../images/site/sti.jpeg" alt="">
+                <p>      Le bac technologique STI2D s’adresse à ceux qui s’intéressent à l’ingénierie industrielle, à l’innovation technologique et à la préservation de l’environnement. Il prépare à la poursuite d’études scientifiques et technologiques industrielles en BTS, DUT, classes préparatoires technologies et sciences industrielles (TSI), puis écoles d’ingénieurs, ou écoles spécialisées (électronique, réseaux, matériaux, bâtiment…).</p>
+
+<p>    Plus des deux tiers des enseignements sont consacrés aux matières scientifiques et technologiques de la filière et de la spécialité. La conception de produit est au cœur des enseignements de la spécialité ITEC tandis que la spécialité SIN propose de l’informatique et de la programmation. Les enseignements portent sur l’analyse et la conception de produits dans le respect d’une démarche de développement durable.</p>
+
+  <p>  L’enseignement de chaque option, quand il ne se déroule pas dans le cadre d’un projet se déroule sous la forme de travaux pratiques. Ces TP ont pour objectifs de développer l’autonomie des élèves tout en leur apportant l’aide pédagogique dont ils ont besoin.</p>
+
+    <p>Option SIN</p>
+
+    <p>Avec cette option, les élèves travaillent sur divers systèmes numériques et différents systèmes d’exploitation.</p>
+    <p>L’enseignement de l’option SIN  se fait dans le cadre de différents projets. Les élèves sont conduits à mener des travaux concrets, passant par des phases de création et de conception.</p>
+    <p>Cette option aborde différents sujets qui sont récurrents dans les grands secteurs d’activités de la filière électronique, tels que : Création de site web, structure d’un réseau, systèmes de télécommunications, programmation structurée …</p>
+
+<p>    Les TP sont divers et sollicitent différents matériels high-tech ou électroniques.</p>
+
+
+
+    <p>Option ITEC</p>
+
+    <p>La spécialité Innovation Technologique et Eco-Conception (ITEC) explore l’étude et la recherche de solutions techniques innovantes relatives aux produits manufacturés en intégrant la dimension design et ergonomie. Elle apporte les compétences nécessaires à l’analyse, l’éco-conception et l’intégration dans son environnement d’un système dans une démarche de développement durable.</p>
+
+    <p>Les différents supports utilisés sont les systèmes didactiques d’expérimentation des procédés (usinage, impression en 3D, mise en forme), les équipements de mesures (métrologie) et d’ informatiques (progiciels de simulation et de réalité virtuelle)</p>
+
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION END-->
+
+
+
+    <!--HEADER SECTION-->
+    <section class="wed-hom-footer">
+        <div class="container">
+            <div class="row wed-foot-link">
+                <div class="col-md-4 foot-tc-mar-t-o">
+                    <h4>Formation</h4>
+                    <ul>
+                      <li><a href="troisieme-prepa.php">TROISIÈME PRÉPA PRO</a></li>
+                      <li><a href="bac-pro-tu.php">BAC PRO TU</a></li>
+                      <li><a href="bac-pro-mei.php">BAC PRO MEI</a></li>
+                      <li><a href="bac-pro-sn.php">BAC PRO SN</a></li>
+                      <li><a href="formation-sst.php">FORMATION SST</a></li>
+                      <li><a href="bac-sti2d.php">BAC STI2D</a></li>
+                      <li><a href="bts-cprp.php">BTS CPRP</a></li>
+                      <li><a href="bts-sio-sisr.php">BTS SIO – OPTION SISR</a></li>
+                      <li><a href="bts-sio-slam.php">BTS SIO – OPTION SLAM</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Accès</h4>
+                    <ul>
+                        <p>RER B (Le Bourget) et Bus 133 (Albert Chardavoine)</p>
+                        <p>RER B (La Courneuve) et Bus 249 (Albert Chardavoine) </p>
+                        <p>Tramway T11: arrêt Dugny-La Courneuve </p>
+                    </ul>
+                </div>
+
+                    <div class="col-md-4 foot-tc-mar-t-o">
+                        <h4>Contact</h4>
+                        <p>Adresse : 5 Avenue du Général de Gaulle, 93440 Dugny</p>
+                        <p>Téléphone : 01 48 37 74 26</a></p>
+                        <p>Email: <a href="#!">administration@lyceerobertschuman.com</a></p>
+                    </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COPY RIGHTS -->
+    <section class="wed-rights">
+        <div class="container">
+            <div class="row">
+                <div class="copy-right">
+                    <p>Copyrights © 2021 RN53Themes. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END HEADER SECTION-->
+
+    <!--SECTION LOGIN, REGISTER AND FORGOT PASSWORD-->
+    <section>
+        <!-- LOGIN SECTION -->
+        <div id="modal1" class="modal fade" role="dialog">
+            <div class="log-in-pop">
+                <div class="log-in-pop-left">
+                    <h1>BONJOUR ! </h1>
+                    <p>Vous ne possedez pas de compte? N'hesitez pas sa prend 2 minute </p>
+                </div>
+                <div class="log-in-pop-right">
+                    <a href="#" class="pop-close" data-dismiss="modal"><img src="main/HTML/images/cancel.png" alt="" />
+                    </a>
+                    <h4>Bonjour ! </h4>
+                    <p>Vous ne possedez pas de compte? N'hesitez pas sa prend 2 minute </p>
+                      <form action="main/HTML/traitement/connexion-traitement.php" method="POST" class="s12">
+                        <div>
+                            <div class="input-field s12">
+                                <input name="mail" type="text" data-ng-model="name" class="validate">
+                                <label>Email</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input name="mdp" type="password" class="validate">
+                                <label>Mot de passe</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="s12 log-ch-bx">
+                                <p>
+                                    <input type="checkbox" id="test5" />
+                                    <label for="test5">Souvenir de moi</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s4">
+                                <input type="submit" value="Login" class="waves-effect waves-light log-in-btn"> </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal3">Mot de passe oublier</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Crée un nouveau compte </a> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- REGISTER SECTION -->
+        <div id="modal2" class="modal fade" role="dialog">
+            <div class="log-in-pop">
+                <div class="log-in-pop-left">
+                    <h1>Bonjour</h1>
+                    <p>Vous ne possedez pas de compte? N'hesitez pas sa prend 2 minute </p>
+                </div>
+                <div class="log-in-pop-right">
+                    <a href="#" class="pop-close" data-dismiss="modal"><img src="main/HTML/images/cancel.png" alt="" />
+                    </a>
+                    <h4>Crée un nouveau compte </h4>
+                    <form action="main/HTML/traitement/inscription-traitement.php" method="POST" class="s12">
+                        <div>
+                            <div class="input-field s12">
+                                <input type="text" name="nom"  data-ng-model="name1" class="validate">
+                                <label>nom</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input type="text" name="prenom"  data-ng-model="name1" class="validate">
+                                <label>prenom</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input type="email" name="mail" class="validate">
+                                <label>Email</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input type="password" name="mdp" class="validate">
+                                <label>mot de passe</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input type="password" name="mdp" class="validate">
+                                <label>Confirme le mot de passe </label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s4">
+                                <input type="submit" value="Register" class="waves-effect waves-light log-in-btn"> </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Déja membre ? Connexion </a> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- FORGOT SECTION -->
+        <div id="modal3" class="modal fade" role="dialog">
+
+                <div class="log-in-pop-right">
+                    <a href="#" class="pop-close" data-dismiss="modal"><img src="main/HTML/images/cancel.png" alt="" />
+                    </a>
+                    <h4>Mot de passe oublier </h4>
+
+                    <form class="s12">
+                        <div>
+                            <div class="input-field s12">
+                                <input type="text" data-ng-model="name3" class="validate">
+                                <label>Nom ou mail </label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s4">
+                                <input type="submit" value="Submit" class="waves-effect waves-light log-in-btn"> </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Déja membre? Login</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Crée un compte </a> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Import jQuery before materialize.js-->
+    <script src="../js/main.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/custom.js"></script>
+</body>
