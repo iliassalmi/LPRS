@@ -103,12 +103,17 @@
                                   <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a></li>
                                   <li><a href="#!" data-toggle="modal" data-target="#modal1">Connexion</a></li>
                                 <?php }
-                                else {
-
-                                ?>
-                                    <li><a href="/LPRS/main/HTML/vue/profile.php"><span>Mon compte</span></a></li>
+                                elseif($_SESSION['role'] == 1) {
+                                  ?>
+                                  <li><a href="/LPRS/main/HTML/vue/dashboard.php"><span>Mon compte</span></a></li>
+                                  <li><a href="/LPRS/main/HTML/vue/deconnexion.php"><span>Deconnexion</span></a></li>
+                                  <?php
+                                    }
+                                 elseif($_SESSION['role'] == 0) { ?>
+                                  <li><a href="/LPRS/main/HTML/vue/db-profile.php"><span>Mon compte</span></a></li>
                                     <li><a href="/LPRS/main/HTML/vue/deconnexion.php"><span>Deconnexion</span></a></li>
-                              <?php }
+                            <?php  }?>
+                              <?php
                               ?>
                             </ul>
                         </div>
