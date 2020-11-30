@@ -54,26 +54,14 @@
 
 <!-- Affichage du tableau contenant des informations -->
 
-<p>  <div class="container-table100">
-<div class="wrap-table100">
-<div class="table100 ver1 m-b-110">
-<div class="table100-head">
-<table>
-<thead>
-<tr class="row100 head">
-<th class="cell100 column1">Nom</th>
-<th class="cell100 column2">Prenom</th>
-<th class="cell100 column3">mdp</th>
-    <th class="cell100 column4">mail</th>
-<th class="cell100 column5">role</th>
 
-</tr>
-</thead>
-</table>
-</div></p>
+
+
+
+
 
 <div class="table100-body js-pscroll">
-<table>
+
 <tbody>
 <!-- Selection de toute les réservations -->
   <?php
@@ -84,7 +72,7 @@
   }
 
   $req = $bdd->prepare('SELECT * FROM utilisateur');
-  $req->execute(array('mail'=>$_SESSION['mail']));
+  $req->execute(array());
   $donnees= $req->fetchall();
 
   foreach ($donnees as $value) { ?>
@@ -94,6 +82,7 @@
         <p> mdp :  <td class="cell100 column1"><?php echo $value['mdp']?></td> </p>
     <p> mail :  <td class="cell100 column1"><?php echo $value['mail']?></td> </p>
 <p> role :  <td class="cell100 column1"><?php echo $value['role']?></td> </p>
+
 <p>////////////////////////////////////////////// </p>
 
 
