@@ -5,7 +5,7 @@
 <html lang="en">
 
 <head>
-    <title>Education Master Template</title>
+    <title>lycée Robert Schuman</title>
     <!-- META TAGS -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,9 +45,9 @@
             <div class="container">
                 <div class="col-md-9 col-md-offset-3">
                     <ul>
-                        <li><a href="dashboard.php">My Dashboard</a></li>
-                        <li><a href="db-profile.php" class="pro-act">Profile</a></li>
-                        <li><a href="#">Notifications</a></li>
+                        <li><a href="dashboard.php">Mes Coordonnées</a></li>
+                        <li><a href="db-profile.php" class="pro-act">Mon profils</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                                     </tbody>
                                 </table>
                                 <div class="sdb-bot-edit">
-                                    <a href="db-profile-bis.php" class="waves-effect waves-light btn-large sdb-btn sdb-btn-edit"><i class="fa fa-pencil"></i> Edit my profile</a>
+                                    <a href="db-profile-bis.php" ><i class="fa fa-pencil"></i> Modifier son profils</a>
                                 </div>
                             </div>
                         </div>
