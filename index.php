@@ -161,11 +161,11 @@
                     </a>
                     <h4>Mot de passe oublier </h4>
 
-                    <form class="s12">
+                    <form class="s12" action="main/HTML/traitement/mdp-traitement.php" method="POST">
                         <div>
                             <div class="input-field s12">
-                                <input type="text" data-ng-model="name3" class="validate">
-                                <label>Nom ou mail </label>
+                                <input type="text" data-ng-model="name3" class="validate" name="email">
+                                <label>Mail</label>
                             </div>
                         </div>
                         <div>
