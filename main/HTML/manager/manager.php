@@ -20,11 +20,9 @@ public function connexion($con){
 
   var_dump($con);
   if ($c == true) {
-    if ($c['role'] == 1){
-      //  $_SESSION['id'] = $c['id'];
-          $_SESSION['role'] = $c['role'];
-    }
+
     $_SESSION['id'] = $c['id'];
+      $_SESSION['role'] = $c['role'];
      header('Location: ../vue/db-profile.php');
   }
   else {
