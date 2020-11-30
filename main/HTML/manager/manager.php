@@ -21,12 +21,7 @@ public function connexion($con){
   var_dump($con);
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
-    if ($_SESSION["role"] = '1') {
-       header('Location: ../vue/dashboard.php');
-    }
-    else {
- header('Location: ../vue/db-profile.php');
-    }
+     header('Location: ../vue/db-profile.php');
   }
   else {
     echo "Mauvais login veuillez réessayer !";
@@ -63,6 +58,52 @@ public function connexion($con){
           } else {
              header("location: ../../../index.php");
           }
+}
+
+
+public function mdp($new){
+        $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+
+
+        if(isset($_POST['email']))
+        {
+
+
+          $token = uniqid();
+          $url = "http://localhost/LPRS/main/HTML/token/token.php/token?token=$token";
+
+          $message = "Bonjour, voici votre lien pour la réinitialisation : $url";
+          $headers = 'Content-Type: text/plain; charset="utf-8"'." ";
+
+
+          $mail = new PHPMailer();
+          $mail->isSMTP();                                            // Send using SMTP
+          $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+          $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+          $mail->Username   = 'irisitalianna75@gmail.com';                     // SMTP username
+          $mail->Password   = 'iris75000';                               // SMTP password
+          $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+          $mail->Port       = 587;                                    // TCP port to connect to
+
+          //Recipients
+          $mail->setFrom('irisitalianna75@gmail.com', 'Nouvelle demande de contact');
+          $mail->addAddress($new->getEmail(), 'Contact');     // Add a recipient //Recipients
+           $mail->Body    =  "http://localhost/LPRS/main/HTML/token/token.php/token?token=$token";
+           $sql = "UPDATE utilisateur SET token = ? WHERE mail = ?";
+           $stmt = $bdd->prepare($sql);
+           $stmt->execute([$token, $_POST['email']]);
+           echo 'Mail envoyé!';
+          if(!$mail->Send()) {
+            echo '<body onLoad="alert(\'Erreur\')">';
+          echo '<meta http-equiv="refresh" content="0;URL=../View/contact.php">';
+          } else {
+             header("location: ../../../index.php");
+          }
+
+
+
+        }
+
 }
 
 
