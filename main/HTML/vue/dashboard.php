@@ -44,7 +44,7 @@
                   <ul>
                       <li><a href="dashboard.php">My Dashboard</a></li>
                       <li><a href="db-profile.php" class="pro-act">Profile</a></li>
-                      <li><a href="#">Notifications</a></li>
+                      <li><a href="../Exportation/excel.php">Exportation</a></li>
                   </ul>
                 </div>
             </div>

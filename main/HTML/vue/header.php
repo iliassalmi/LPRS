@@ -95,22 +95,21 @@
                         </div>
                         <div class="ed-com-t1-right">
                             <ul>
-                              <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a></li>
+
                                 <?php
 
                                   if (empty($_SESSION))
                                 { ?>
-
+                                  <li><a href="#!" data-toggle="modal" data-target="#modal2">Inscription</a></li>
                                   <li><a href="#!" data-toggle="modal" data-target="#modal1">Connexion</a></li>
                                 <?php }
-                                if(isset($_SESSION)){?>
+                                else {
+
+                                ?>
                                     <li><a href="/LPRS/main/HTML/vue/profile.php"><span>Mon compte</span></a></li>
                                     <li><a href="/LPRS/main/HTML/vue/deconnexion.php"><span>Deconnexion</span></a></li>
                               <?php }
-                              elseif ($_SESSION ['role'] == 1)
-                              {?>
-                                <li><a href="/LPRS/main/HTML/vue/admin.php"><span>Mon compte</span></a></li>
-                              <?php } ?>
+                              ?>
                             </ul>
                         </div>
 

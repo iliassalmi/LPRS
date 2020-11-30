@@ -21,7 +21,12 @@ public function connexion($con){
   var_dump($con);
   if ($c == true) {
     $_SESSION['id'] = $c['id'];
-     header('Location: ../vue/db-profile.php');
+    if ($_SESSION["role"] = '1') {
+       header('Location: ../vue/dashboard.php');
+    }
+    else {
+ header('Location: ../vue/db-profile.php');
+    }
   }
   else {
     echo "Mauvais login veuillez réessayer !";
