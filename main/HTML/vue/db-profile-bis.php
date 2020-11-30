@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Education Master Template</title>
+    <title>Lycée Robert Schuman</title>
     <!-- META TAGS -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,13 +44,9 @@
             <div class="container">
                 <div class="col-md-9 col-md-offset-3">
                     <ul>
-                        <li><a href="dashboard.php">My Dashboard</a></li>
-                        <li><a href="db-profile.php" class="pro-act">Profile</a></li>
-                        <li><a href="db-courses.php">Courses</a></li>
-                        <li><a href="db-exams.php">Exams</a></li>
-                        <li><a href="db-time-line.php">Time Line</a></li>
-                        <li><a href="#">Entry</a></li>
-                        <li><a href="#">Notifications</a></li>
+
+                        <li><a href="db-profile.php" class="pro-act">Mon Profils</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -58,29 +54,17 @@
         <div class="stu-db">
             <div class="container pg-inn">
                 <div class="col-md-3">
-                    <div class="pro-user">
-                        <img src="images/user.jpg" alt="user">
-                    </div>
-                    <div class="pro-user-bio">
-                        <ul>
-                            <li>
-                                <h4>Emily Jessica</h4>
-                            </li>
-                            <li>Student Id: ST17241</li>
-                            <li><a href="#!"><i class="fa fa-facebook"></i> Facebook: my sample</a></li>
-                            <li><a href="#!"><i class="fa fa-google-plus"></i> Google: my sample</a></li>
-                            <li><a href="#!"><i class="fa fa-twitter"></i> Twitter: my sample</a></li>
-                        </ul>
-                    </div>
+
+
                 </div>
         <form action="../traitement/modification_profils-traitement.php" method="POST">
                 <div class="col-md-9">
                     <div class="udb">
 
                         <div class="udb-sec udb-prof">
-                            <h4><img src="images/icon/db1.png" alt="" /> My Profile</h4>
-                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                                to using 'Content here, content here', making it look like readable English.</p>
+                            <h4><img src="images/icon/db1.png" alt="" /> Mon Profils</h4>
+                              <p>Vous souhaitez modifier une ou plusieurs de vos données personnelles ?</p>
+                              <p>Veuillez entrez les nouvelles informations vous concernants</p>
                             <div class="sdb-tabl-com sdb-pro-table">
                                 <table class="responsive-table bordered">
                                     <tbody>
@@ -117,7 +101,7 @@
                                 </table>
                               </form>
                                 <div class="sdb-bot-edit">
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+
                                   <input type="submit" value="Envoyer le formulaire">
                                 </div>
                             </div>
@@ -130,28 +114,7 @@
     <!--SECTION END-->
 
 
-    <!--SECTION START-->
-    <section>
-        <div class="full-bot-book">
-            <div class="container">
-                <div class="row">
-                    <div class="bot-book">
-                        <div class="col-md-2 bb-img">
-                            <img src="images/3.png" alt="">
-                        </div>
-                        <div class="col-md-7 bb-text">
-                            <h4>therefore always free from repetition</h4>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-                        </div>
-                        <div class="col-md-3 bb-link">
-                            <a href="course-details.php">Book This Course</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--SECTION END-->
+  
 
     <!--HEADER SECTION-->
     <section class="wed-hom-footer">
