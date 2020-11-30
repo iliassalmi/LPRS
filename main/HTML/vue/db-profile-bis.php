@@ -114,7 +114,7 @@
     <!--SECTION END-->
 
 
-  
+
 
     <!--HEADER SECTION-->
     <section class="wed-hom-footer">
@@ -338,14 +338,7 @@
                     <h1>Hello... </h1>
                     <p>Don't have an account? Create your account. It's take less then a minutes</p>
                     <h4>Login with social media</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-google"></i> Google+</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a>
-                        </li>
-                    </ul>
+
                 </div>
                 <div class="log-in-pop-right">
                     <a href="#" class="pop-close" data-dismiss="modal"><img src="images/cancel.png" alt="" />
@@ -372,19 +365,7 @@
         </div>
     </section>
 
-    <section>
-        <div class="icon-float">
-            <ul>
-                <li><a href="#" class="sh">1k <br> Share</a> </li>
-                <li><a href="#" class="fb1"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-                <li><a href="#" class="gp1"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
-                <li><a href="#" class="tw1"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-                <li><a href="#" class="li1"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-                <li><a href="#" class="wa1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
-                <li><a href="#" class="sh1"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </li>
-            </ul>
-        </div>
-    </section>
+    
 
     <!--Import jQuery before materialize.js-->
     <script src="../js/main.min.js"></script>
