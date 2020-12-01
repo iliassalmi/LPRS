@@ -117,7 +117,7 @@
 
 
     <!--HEADER SECTION-->
-    <?php include('main/HTML/vue/footer.php'); ?>
+    <?php include('footer.php'); ?>
 
     <!--END HEADER SECTION-->
 
