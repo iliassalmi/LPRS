@@ -42,8 +42,8 @@
             <div class="container">
                 <div class="col-md-9 col-md-offset-3">
                   <ul>
-                      <li><a href="dashboard.php">My Dashboard</a></li>
-                      <li><a href="db-profile.php" class="">Profile</a></li>
+                      <li><a href="dashboard.php">Admin</a></li>
+                      <li><a href="db-profile.php" class="">Profil</a></li>
                       <li><a href="../Exportation/excel.php">Exportation</a></li>
                   </ul>
                 </div>
@@ -63,6 +63,7 @@
 <div class="table100-body js-pscroll">
 
 <tbody>
+
 <!-- Selection de toute les réservations -->
   <?php
   try {
@@ -76,24 +77,32 @@
   $donnees= $req->fetchall();
 
   foreach ($donnees as $value) { ?>
-    <tr class="row100 body">
-      <p> nom :  <td class="cell100 column1"><?php echo $value['nom']?></td> </p>
-<p> prenom :  <td class="cell100 column1"><?php echo $value['prenom']?></td> </p>
-        <p> mdp :  <td class="cell100 column1"><?php echo $value['mdp']?></td> </p>
-    <p> mail :  <td class="cell100 column1"><?php echo $value['mail']?></td> </p>
-<p> role :  <td class="cell100 column1"><?php echo $value['role']?></td> </p>
+
+    <table>
+<form action="../traitement/traitement-suppr.php" method="post">
+
+    <tr>    <td class="cell100 column1">nom : <?php echo $value['nom']?></td> </tr>
+<tr>   <td class="cell100 column1">prenom : <?php echo $value['prenom']?></td> </tr>
+    <tr>       <td class="cell100 column1">mdp : <?php echo $value['mdp']?></td> </tr>
+   <tr>  <td class="cell100 column1"> mail : <?php echo $value['mail']?>
+   <input type="hidden" name="mail" value=<?php echo $value['mail']?> ></td></tr>
+<tr>   <td class="cell100 column1">role : <?php echo $value['role']?></td> </tr>
+<tr><td><input type="submit" value="supprimer"/></td></tr>
 
 <p>////////////////////////////////////////////// </p>
 
+ </form>
 
-         </tr>
 
 <?php
  }
+
+
 ?>
+ </table>
 
 </tbody>
-</table>
+
 </div>
 </div>
 <section>

@@ -9,8 +9,24 @@ require '../vendor/phpmailer/phpmailer/src/SMTP.php';
 require '../vendor/autoload.php';
 
 Class Manager{
+  public function suppression($new){
+          $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+
+          $req = $bdd->prepare('DELETE FROM utilisateur WHERE mail= :mail');
+          $a = $req->execute(array('mail'=>$new->getMail()));
+
+
+          if($a == true) {
+            header("location: ../vue/dashboard.php");
+        }
+           else {
+             header("location: ../../../dashboardss.php");
+          }
+}
+
 
 public function connexion($con){
+
         $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
 
