@@ -45,7 +45,7 @@
                 <div class="col-md-9 col-md-offset-3">
                     <ul>
 
-                        <li><a href="db-profile.php" class="pro-act">Mon Profils</a></li>
+                        <li><a href="db-profile.php" class="">Mon Profils</a></li>
 
                     </ul>
                 </div>

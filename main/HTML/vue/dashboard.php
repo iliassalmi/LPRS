@@ -43,7 +43,7 @@
                 <div class="col-md-9 col-md-offset-3">
                   <ul>
                       <li><a href="dashboard.php">My Dashboard</a></li>
-                      <li><a href="db-profile.php" class="pro-act">Profile</a></li>
+                      <li><a href="db-profile.php" class="">Profile</a></li>
                       <li><a href="../Exportation/excel.php">Exportation</a></li>
                   </ul>
                 </div>

@@ -45,7 +45,7 @@
             <div class="container">
                 <div class="col-md-9 col-md-offset-3">
                     <ul>
-                        <li><a href="db-profile.php" class="pro-act">Mon profils</a></li>
+                        <li><a href="db-profile.php" class="">Mon profils</a></li>
                         <?php
                         if($_SESSION['role'] == 1) {
                           ?>
