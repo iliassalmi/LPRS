@@ -46,7 +46,13 @@
                 <div class="col-md-9 col-md-offset-3">
                     <ul>
                         <li><a href="db-profile.php" class="pro-act">Mon profils</a></li>
-
+                        <?php
+                        if($_SESSION['role'] == 1) {
+                          ?>
+                          <li><a href="/LPRS/main/HTML/vue/dashboard.php"><span>Admin</span></a></li>
+                          <?php
+                            }
+                          ?>
                     </ul>
                 </div>
             </div>
