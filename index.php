@@ -1,5 +1,14 @@
 <?php include('main/HTML/vue/header.php'); ?>
     <!--END HEADER SECTION-->
+    <?php ?>
+<?php if($_SERVER['REQUEST_URI'] == "/LPRS/index.php?key=1234"){
+   echo "<script>alert('Vous êtes inscrit')</script>";
+
+ }
+ if($_SERVER['REQUEST_URI'] ) {
+
+ }
+ ?>
     <!-- SLIDER -->
     <section>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -149,7 +158,7 @@
                         </div>
                         <div>
                             <div class="input-field s4">
-                                <input type="submit" value="Submit" class="waves-effect waves-light log-in-btn"> </div>
+                                <input type="submit" value="Valider" class="waves-effect waves-light log-in-btn"> </div>
                         </div>
                         <div>
                             <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Déja membre? Login</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Crée un compte </a> </div>
