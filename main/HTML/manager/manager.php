@@ -131,13 +131,12 @@ public function mdp($new){//méthode pour la réinitialisation du mots de passe 
 {
 
             $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
-
     	        $request = $bdd->prepare(" UPDATE utilisateur SET nom = :nom, prenom = :prenom, mail = :mail, mdp = :mdp WHERE id = '$id'");
     	       $a= $request->execute(array(
     	            'nom' => $user->getNom(),
     	            'prenom' => $user->getPrenom(),
     	            'mail' => $user->getMail(),
-    	            'mdp' => $user->getMdp(),
+    	            'mdp' => $user->getMdp()
     	        ));
 
 

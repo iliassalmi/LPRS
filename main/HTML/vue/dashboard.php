@@ -82,15 +82,18 @@
     <table>
 <form action="../traitement/traitement-suppr.php" method="post">
 
-    <tr>    <td class="cell100 column1">nom : <?php echo $value['nom']?></td> </tr>
+    <tr>    <td class="cell100 column1">nom : <?= $value['nom']?></td> </tr>
 <tr>   <td class="cell100 column1">prenom : <?php echo $value['prenom']?></td> </tr>
     <tr>       <td class="cell100 column1">mdp : <?php echo $value['mdp']?></td> </tr>
    <tr>  <td class="cell100 column1"> mail : <?php echo $value['mail']?>
    <input type="hidden" name="mail" value=<?php echo $value['mail']?> ></td></tr>
 <tr>   <td class="cell100 column1">role : <?php echo $value['role']?></td> </tr>
 <tr><td><input type="submit" value="supprimer"/></td></tr>
+<tr><td><a href="#" data-toggle="modal" data-target="#modal3" id="btnModif"
+  data-nom="<?= $value['nom']?>" data-prenom="<?= $value['prenom']?>" data-mdp="<?= $value['mdp']?>" data-mail="<?= $value['mail']?>"
+  >Modifier un utilisateur </a></td></tr>
+<p>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</p>
 
-<p>////////////////////////////////////////////// </p>
 
  </form>
 
@@ -385,8 +388,6 @@
                     <p>Téléphone : 01 48 37 74 26</a></p>
                     <p>Email: <a href="#!">administration@lyceerobertschuman.com</a></p>
                 </div>
-
-
             </div>
         </div>
       </div>
@@ -434,12 +435,6 @@
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="email" name="mail" class="validate">
-                                <label>Email</label>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="input-field s12">
                                 <input type="password" name="mdp" class="validate" >
                                 <label>mot de passe</label>
                             </div>
@@ -451,13 +446,69 @@
                             </div>
                         </div>
                         <div>
+                            <div class="input-field s12">
+                                <input type="email" name="mail" class="validate">
+                                <label>Email</label>
+                            </div>
+                        </div>
+                        <div>
                             <div class="input-field s4">
-                                <input type="submit" value="Register" class="waves-effect waves-light log-in-btn"> </div>
+                                <input type="submit" value="inscription" class="waves-effect waves-light log-in-btn"> </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+        <div id="modal3" class="modal fade" role="dialog">
+            <div class="log-in-pop">
+                <div class="log-in-pop-left">
+                    <h1>Bonjour</h1>
+                    <p> </p>
+                </div>
+                <div class="log-in-pop-right">
+                    <a href="#" class="pop-close" data-dismiss="modal"><img src="" alt="" />
+                    </a>
+                    <h4>modifier un nouveau compte </h4>
+                    <form action="../traitement/modification_profils-traitement.php" method="POST" class="s12">
+                        <div>
+                            <div class="input-field s12">
+                                <input type="text" name="nom" id="nom"  data-ng-model="name1" class="validate">
+                                <label>nom</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input type="text" name="prenom" id="prenom" data-ng-model="name1" class="validate">
+                                <label>prenom</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input type="email" name="mail"id="mail" class="validate">
+                                <label>Email</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input type="password" name="mdp" id="mdp" class="validate" >
+                                <label>mot de passe</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input type="password" name="mdp" class="validate">
+                                <label>Confirme le mot de passe </label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s4">
+                                <input type="submit" value="modifier" class="waves-effect waves-light log-in-btn"> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <!-- FORGOT SECTION -->
 
         </div>
@@ -468,6 +519,15 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/materialize.min.js"></script>
     <script src="../js/custom.js"></script>
+    <script>
+    $(document).on("click","#btnModif",function() {
+      $("#nom").val($(this).data("nom"))
+      $("#prenom").val($(this).data("prenom"))
+        $("#mdp").val($(this).data("mdp"))
+      $("#mail").val($(this).data("mail"))
+
+    });
+    </script>
 </body>
 
 </html>
