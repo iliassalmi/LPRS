@@ -1,9 +1,5 @@
-
-
 <?php include('main/HTML/vue/header.php'); ?>
-
     <!--END HEADER SECTION-->
-
     <!-- SLIDER -->
     <section>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -14,7 +10,6 @@
                     <div class="carousel-caption slider-con">
                         <h2>Lycée   <span>Robert SCHUMAN</span></h2>
                         <p></p>
-
                     </div>
                 </div>
                 <div class="item">
@@ -22,12 +17,9 @@
                     <div class="carousel-caption slider-con">
                         <h2>Lycée   <span>Robert SCHUMAN</span></h2>
                         <p></p>
-
                     </div>
                 </div>
-
             </div>
-
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <i class="fa fa-chevron-left slider-arr"></i>
@@ -37,23 +29,10 @@
             </a>
         </div>
     </section>
-
     <!-- QUICK LINKS -->
-
-
-
-
     <!-- POPULAR COURSES -->
-
-
-
-
-
-
-
     <!-- FOOTER -->
 <?php include('main/HTML/vue/footer.php'); ?>
-
     <!--SECTION LOGIN, REGISTER AND FORGOT PASSWORD-->
     <section>
         <!-- LOGIN SECTION -->
@@ -180,9 +159,6 @@
             </div>
         </div>
     </section>
-
-
-
     <!--Import jQuery before materialize.js-->
     <script src="main/HTML/js/main.min.js"></script>
     <script src="main/HTML/js/bootstrap.min.js"></script>

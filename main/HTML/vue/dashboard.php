@@ -440,7 +440,7 @@
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="password" name="mdp" class="validate">
+                                <input type="password" name="mdp" class="validate" >
                                 <label>mot de passe</label>
                             </div>
                         </div>
