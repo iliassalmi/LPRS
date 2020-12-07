@@ -1,7 +1,7 @@
 <?php
 
 
-class suppression{
+class suppression{//classe suppression avec setteur et getteur 
   private $_mail;
 
   public function __construct($mail){

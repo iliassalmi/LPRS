@@ -1,5 +1,5 @@
 <?php
-class inscription{
+class inscription{//classe inscription avec setteur et getteur
   private $_nom;
   private $_prenom;
   private $_mdp;
@@ -13,36 +13,24 @@ public function __construct($nom,$prenom,$mdp,$mail){
 }
 
 public function setNom($nom){
-  //if(is_string ($nom)){
+
 $this->_nom = $nom ;
-  //}
-//else {
-  //echo"t nul";
-//}
+
 }
 public function setPrenom($prenom){
-//  if(is_string ($prenom)){
+
 $this->_prenom = $prenom ;
-//  }
-//else {
-  //echo"t nul";
+
 }
 
 public function setMdp($mdp){
-  //if(is_string ($nom)){
+
 $this->_mdp = $mdp ;
-  //}
-//else {
-  //echo"t nul";
-//}
+
 }
 public function setMail($mail){
-  //if(is_string ($nom)){
-$this->_mail = $mail ;
-  //}
-//else {
-  //echo"t nul";
-//}
+  $this->_mail = $mail ;
+
 }
 public function getNom(){
   return $this->_nom;

@@ -1,5 +1,5 @@
 <?php
-class reservation{
+class reservation{//classe réservation avec setteur et getteur
   private $_nom;
   private $_message;
   private $_mail;
@@ -13,27 +13,18 @@ public function __construct($nom,$message,$mail){
 }
 
 public function setNom($nom){
-//  if(empty($nom)){
 
-//  }
-//else {
   $this->_nom = $nom ;
 
 }
 
 public function setMessage($message){
-//  if(empty($message)){
 
-//  }
-//else {
 $this->_message = $message ;
 }
 
 public function setMail($mail){
-  //if(empty($mail)){
 
-  //}
-//else {
   $this->_mail = $mail ;
 }
 

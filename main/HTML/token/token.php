@@ -1,7 +1,7 @@
 <?php
 
 $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
-
+//connexion a la BDD et selection de l'email grace au TOKEN
 if(isset($_GET['token']) && $_GET['token'] != '')
 {
   $stmt = $bdd->prepare('SELECT mail FROM utilisateur WHERE token = ?');
@@ -24,7 +24,7 @@ if(isset($_GET['token']) && $_GET['token'] != '')
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-
+<!--Formulaire pour la modification du mots de passe avec envoie d'email-->
   <body>
 
   <div class="wrapper">
@@ -53,7 +53,7 @@ if(isset($_GET['token']) && $_GET['token'] != '')
           }
         }
 
-
+//Une fois l'email selectionnait on modifie le mots de passe
           if(isset($_POST['newPassword']))
           {
             $hashedPassword = md5($_POST['newPassword']);
@@ -77,5 +77,5 @@ if(isset($_GET['token']) && $_GET['token'] != '')
   </div>
   </div>
 
-  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+  </body>
   </html>

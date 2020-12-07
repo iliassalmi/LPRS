@@ -1,6 +1,6 @@
 <?php
 
-class connexion{
+class connexion{//classe connexion avec setteur et getteur
   private $_mail;
   private $_mdp;
 
@@ -10,21 +10,16 @@ public function __construct($mail,$mdp){
 }
 
 public function setMail($mail){
-  //if(is_string ($nom)){
+
 $this->_mail = $mail ;
-  //}
-//else {
-  //echo"t nul";
-//}
+
 }
 
 
 public function setMdp($mdp){
-//  if(is_int ($tel)){
+
 $this->_mdp = $mdp;
-  //}
-////echo"t nul";
-//}
+
 }
 
 public function getMail(){

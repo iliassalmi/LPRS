@@ -1,18 +1,17 @@
+<!--header-->
 <?php include('main/HTML/vue/header.php'); ?>
-    <!--END HEADER SECTION-->
-    <?php ?>
+    <!--gestion d'erreur avec la clé "1234"-->
+
 <?php if($_SERVER['REQUEST_URI'] == "/LPRS/index.php?key=1234"){
    echo "<script>alert('Vous êtes inscrit')</script>";
 
  }
- if($_SERVER['REQUEST_URI'] ) {
 
- }
  ?>
-    <!-- SLIDER -->
+    <!-- SLIDE -->
     <section>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Wrapper for slides -->
+
             <div class="carousel-inner">
                 <div class="item slider1 active">
                     <img src="main/HTML/images/site/lycée2.jpg" alt="">
@@ -29,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Left and right controls -->
+            <!-- carousel -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <i class="fa fa-chevron-left slider-arr"></i>
             </a>
@@ -38,13 +37,11 @@
             </a>
         </div>
     </section>
-    <!-- QUICK LINKS -->
-    <!-- POPULAR COURSES -->
-    <!-- FOOTER -->
+
 <?php include('main/HTML/vue/footer.php'); ?>
     <!--SECTION LOGIN, REGISTER AND FORGOT PASSWORD-->
     <section>
-        <!-- LOGIN SECTION -->
+        <!-- Connexion -->
         <div id="modal1" class="modal fade" role="dialog">
             <div class="log-in-pop">
                 <div class="log-in-pop-left">
@@ -88,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <!-- REGISTER SECTION -->
+        <!-- Inscription -->
         <div id="modal2" class="modal fade" role="dialog">
             <div class="log-in-pop">
                 <div class="log-in-pop-left">
@@ -141,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <!-- FORGOT SECTION -->
+        <!-- Mots de passe oubliée -->
         <div id="modal3" class="modal fade" role="dialog">
 
                 <div class="log-in-pop-right">
@@ -168,7 +165,7 @@
             </div>
         </div>
     </section>
-    <!--Import jQuery before materialize.js-->
+    <!--Import de jQuery -->
     <script src="main/HTML/js/main.min.js"></script>
     <script src="main/HTML/js/bootstrap.min.js"></script>
     <script src="main/HTML/js/materialize.min.js"></script>
