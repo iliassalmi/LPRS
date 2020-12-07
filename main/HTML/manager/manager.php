@@ -74,7 +74,7 @@ public function connexion($con){
             echo '<body onLoad="alert(\'Erreur\')">';
           echo '<meta http-equiv="refresh" content="0;URL=../View/contact.php">';
           } else {
-             header("location: ../../../index.php");
+             header("location: ../../../index.php?key=1234");
           }
 }
 

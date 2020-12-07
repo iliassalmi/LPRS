@@ -180,7 +180,7 @@
                     </a>
                     <h4>Bonjour ! </h4>
                     <p>Vous ne possedez pas de compte? N'hesitez pas sa prend 2 minute </p>
-                      <form action="main/HTML/traitement/connexion-traitement.php" method="POST" class="s12">
+                      <form action="../traitement/connexion-traitement.php" method="POST" class="s12">
                         <div>
                             <div class="input-field s12">
                                 <input name="mail" type="text" data-ng-model="name" class="validate">
@@ -223,7 +223,7 @@
                     <a href="#" class="pop-close" data-dismiss="modal"><img src="main/HTML/images/cancel.png" alt="" />
                     </a>
                     <h4>Crée un nouveau compte </h4>
-                    <form action="main/HTML/traitement/inscription-traitement.php" method="POST" class="s12">
+                    <form action="../traitement/inscription-traitement.php" method="POST" class="s12">
                         <div>
                             <div class="input-field s12">
                                 <input type="text" name="nom"  data-ng-model="name1" class="validate">
@@ -273,16 +273,16 @@
                     </a>
                     <h4>Mot de passe oublier </h4>
 
-                    <form class="s12">
+                    <form class="s12" action="../traitement/mdp-traitement.php" method="POST">
                         <div>
                             <div class="input-field s12">
-                                <input type="text" data-ng-model="name3" class="validate">
-                                <label>Nom ou mail </label>
+                                <input type="text" data-ng-model="name3" class="validate" name="email">
+                                <label>Mail</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s4">
-                                <input type="submit" value="Submit" class="waves-effect waves-light log-in-btn"> </div>
+                                <input type="submit" value="Valider" class="waves-effect waves-light log-in-btn"> </div>
                         </div>
                         <div>
                             <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Déja membre? Login</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Crée un compte </a> </div>
