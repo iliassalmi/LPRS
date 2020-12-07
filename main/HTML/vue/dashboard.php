@@ -45,6 +45,7 @@
                       <li><a href="dashboard.php">Admin</a></li>
                       <li><a href="db-profile.php" class="">Profil</a></li>
                       <li><a href="../Exportation/excel.php">Exportation</a></li>
+                      <li><a href="#!" data-toggle="modal" data-target="#modal2">Ajouter un utilisateur </a></li>
                   </ul>
                 </div>
             </div>
@@ -406,153 +407,59 @@
     <!--SECTION LOGIN, REGISTER AND FORGOT PASSWORD-->
     <section>
         <!-- LOGIN SECTION -->
-        <div id="modal1" class="modal fade" role="dialog">
-            <div class="log-in-pop">
-                <div class="log-in-pop-left">
-                    <h1>Hello...</h1>
-                    <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <h4>Login with social media</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-google"></i> Google+</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="log-in-pop-right">
-                    <a href="#" class="pop-close" data-dismiss="modal"><img src="images/cancel.png" alt="" />
-                    </a>
-                    <h4>Login</h4>
-                    <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <form class="s12">
-                        <div>
-                            <div class="input-field s12">
-                                <input type="text" data-ng-model="name" class="validate">
-                                <label>User name</label>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="input-field s12">
-                                <input type="password" class="validate">
-                                <label>Password</label>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="s12 log-ch-bx">
-                                <p>
-                                    <input type="checkbox" id="test5" />
-                                    <label for="test5">Remember me</label>
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="input-field s4">
-                                <input type="submit" value="Login" class="waves-effect waves-light log-in-btn"> </div>
-                        </div>
-                        <div>
-                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal3">Forgot password</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Create a new account</a> </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+
         <!-- REGISTER SECTION -->
         <div id="modal2" class="modal fade" role="dialog">
             <div class="log-in-pop">
                 <div class="log-in-pop-left">
-                    <h1>Hello...</h1>
-                    <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <h4>Login with social media</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-google"></i> Google+</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a>
-                        </li>
-                    </ul>
+                    <h1>Bonjour</h1>
+                    <p>Vous ne possedez pas de compte? N'hesitez pas sa prend 2 minute </p>
                 </div>
                 <div class="log-in-pop-right">
-                    <a href="#" class="pop-close" data-dismiss="modal"><img src="images/cancel.png" alt="" />
+                    <a href="#" class="pop-close" data-dismiss="modal"><img src="" alt="" />
                     </a>
-                    <h4>Create an Account</h4>
-                    <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <form class="s12">
+                    <h4>Crée un nouveau compte </h4>
+                    <form action="main/HTML/traitement/inscription-traitement.php" method="POST" class="s12">
                         <div>
                             <div class="input-field s12">
-                                <input type="text" data-ng-model="name1" class="validate">
-                                <label>User name</label>
+                                <input type="text" name="nom"  data-ng-model="name1" class="validate">
+                                <label>nom</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="email" class="validate">
-                                <label>Email id</label>
+                                <input type="text" name="prenom"  data-ng-model="name1" class="validate">
+                                <label>prenom</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="password" class="validate">
-                                <label>Password</label>
+                                <input type="email" name="mail" class="validate">
+                                <label>Email</label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s12">
-                                <input type="password" class="validate">
-                                <label>Confirm password</label>
+                                <input type="password" name="mdp" class="validate">
+                                <label>mot de passe</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-field s12">
+                                <input type="password" name="mdp" class="validate">
+                                <label>Confirme le mot de passe </label>
                             </div>
                         </div>
                         <div>
                             <div class="input-field s4">
                                 <input type="submit" value="Register" class="waves-effect waves-light log-in-btn"> </div>
                         </div>
-                        <div>
-                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Are you a already member ? Login</a> </div>
-                        </div>
                     </form>
                 </div>
             </div>
         </div>
         <!-- FORGOT SECTION -->
-        <div id="modal3" class="modal fade" role="dialog">
-            <div class="log-in-pop">
-                <div class="log-in-pop-left">
-                    <h1>Hello... </h1>
-                    <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <h4>Login with social media</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-google"></i> Google+</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="log-in-pop-right">
-                    <a href="#" class="pop-close" data-dismiss="modal"><img src="images/cancel.png" alt="" />
-                    </a>
-                    <h4>Forgot password</h4>
-                    <p>Don't have an account? Create your account. It's take less then a minutes</p>
-                    <form class="s12">
-                        <div>
-                            <div class="input-field s12">
-                                <input type="text" data-ng-model="name3" class="validate">
-                                <label>User name or email id</label>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="input-field s4">
-                                <input type="submit" value="Submit" class="waves-effect waves-light log-in-btn"> </div>
-                        </div>
-                        <div>
-                            <div class="input-field s12"> <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal1">Are you a already member ? Login</a> | <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#modal2">Create a new account</a> </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+
         </div>
     </section>
 

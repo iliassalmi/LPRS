@@ -207,7 +207,7 @@
                     </a>
                     <h4>Bonjour ! </h4>
                     <p>Vous ne possedez pas de compte? N'hesitez pas sa prend 2 minute </p>
-                      <form action="main/HTML/traitement/connexion-traitement.php" method="POST" class="s12">
+                      <form action="../traitement/connexion-traitement.php" method="POST" class="s12">
                         <div>
                             <div class="input-field s12">
                                 <input name="mail" type="text" data-ng-model="name" class="validate">
