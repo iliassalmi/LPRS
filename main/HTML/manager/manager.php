@@ -9,8 +9,8 @@ require '../vendor/phpmailer/phpmailer/src/SMTP.php';
 require '../vendor/autoload.php';
 
 Class Manager{
-  public function suppression($new){
-          $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+  public function suppression($new){//méthode de suppression: Il permet de supprimer un compte utilisateur depuis l'admin
+          $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');//Formulaire recupérer depuis dashboard
 
           $req = $bdd->prepare('DELETE FROM utilisateur WHERE mail= :mail');
           $a = $req->execute(array('mail'=>$new->getMail()));
@@ -25,8 +25,8 @@ Class Manager{
 }
 
 
-public function connexion($con){
-
+public function connexion($con){//méthode de connexion: Il permet de se connecter a un profil
+// Formulaire contenue dans le header de chaque page HTML
         $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
 
@@ -49,7 +49,8 @@ public function connexion($con){
 
   }
 
-  public function inscription($new){
+  public function inscription($new){// méthode d'inscription avec envoie d'email: Il permet de crée un profils utilisateur sur le site
+//Formulaire contenue dans le header de chaque page HTML
           $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
           $req = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, mdp, mail) VALUES(:nom, :prenom, :mdp, :mail)');
@@ -79,9 +80,9 @@ public function connexion($con){
 }
 
 
-public function mdp($new){
-        $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
-
+public function mdp($new){//méthode pour la réinitialisation du mots de passe avec envoie d'email
+//Formulaire contenue dans le header de chaque page html
+         $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
         if(isset($_POST['email']))
         {
@@ -125,8 +126,9 @@ public function mdp($new){
 }
 
 
-    public function modification_user($user,$id)
-    	    {
+    public function modification_user($user,$id)//Méthode pour modifier ces propres données (son nom, son prénom, son email etc...)
+//Formulaire contenue dans la page "db-profile-bis.php"
+{
 
             $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
@@ -145,7 +147,8 @@ public function mdp($new){
 
 
 
-          public function offre($stage){
+          public function offre($stage){//Méthode qui ajoute des offres d'alternance dans la BDD et dans le profils admin
+//Formulaire contenue dans la page "award.php"
                   $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
                   $req = $bdd->prepare('INSERT INTO evenement(nom, description, duree, localisation) VALUES(:nom, :description, :duree, :localisation)');
@@ -165,7 +168,7 @@ public function mdp($new){
                   }
             }
 
-    public function afficheUser($id){
+    public function afficheUser($id){//méthode qui affiche les utilisateurs pour le profils admin
 
 $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 $red = $bdd->prepare('SELECT * FROM utilisateur WHERE id=:id');
@@ -175,7 +178,8 @@ $c = $red->fetch();
 
 }
 
-public function afficheOffre($id){
+public function afficheOffre($id){//méthode qui affiche les offres d'alternance dans le profils admin
+
 
 $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 $red = $bdd->prepare('SELECT * FROM evenement WHERE id=:id');
@@ -187,7 +191,8 @@ return $c;
 
 
 
-public function reservation($k){
+public function reservation($k){// //méthode qui ajoute des avis
+//Formulaire contenue dans la page "contact-us.php"
         $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
 
         $req = $bdd->prepare('INSERT INTO contact(nom, message, mail) VALUES(:nom, :message, :mail)');
