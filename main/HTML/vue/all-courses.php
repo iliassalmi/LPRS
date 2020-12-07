@@ -44,7 +44,7 @@
                 <div class="ed-course">
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="ed-course-in">
-                            <a class="course-overlay" href="troisieme-prepa.php">
+                            <a class="course-overlay" href="troisieme-prepa.php"> <!-- affichage de l'onglet avec une image pour chaque formation -->
                                 <img src="../images/site/prepa.jpg" alt="">
                                 <span>TROISIÈME PRÉPA PRO</span>
                             </a>
@@ -53,14 +53,14 @@
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="ed-course-in">
                             <a class="course-overlay" href="bac-pro-tu.php">
-                                <img src="../images/site/usinage.jpg" alt="">
+                                <img src="../images/site/usinage.jpg" alt=""><!-- affichage de l'onglet avec une image pour chaque formation -->
                                 <span>BAC PRO TU</span>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="ed-course-in">
-                            <a class="course-overlay" href="bac-pro-mei.php">
+                            <a class="course-overlay" href="bac-pro-mei.php"><!-- affichage de l'onglet avec une image pour chaque formation -->
                                 <img src="../images/site/mei.jpg" alt="">
                                 <span>BAC PRO MEI</span>
                             </a>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="ed-course-in">
-                            <a class="course-overlay" href="bac-pro-ns.php">
+                            <a class="course-overlay" href="bac-pro-ns.php"><!-- affichage de l'onglet avec une image pour chaque formation -->
                                 <img src="../images/site/sn.jpg" alt="">
                                 <span>BAC PRO SN</span>
                             </a>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="ed-course-in">
-                            <a class="course-overlay" href="bts-sio-slam.php">
+                            <a class="course-overlay" href="bts-sio-slam.php"><!-- affichage de l'onglet avec une image pour chaque formation -->
                                 <img src="../images/site/slam.jpeg" alt="">
                                 <span>BTS SIO – OPTION SLAM</span>
                             </a>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="ed-course-in">
-                            <a class="course-overlay" href="bts-sio-sisr.php">
+                            <a class="course-overlay" href="bts-sio-sisr.php"><!-- affichage de l'onglet avec une image pour chaque formation -->
                                 <img src="../images/site/sisr.jpg" alt="">
                                 <span>BTS SIO – OPTION SISR</span>
                             </a>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="ed-course-in">
-                            <a class="course-overlay" href="bac-sti2d.php">
+                            <a class="course-overlay" href="bac-sti2d.php"><!-- affichage de l'onglet avec une image pour chaque formation -->
                                 <img src="../images/site/sti.jpeg" alt="">
                                 <span>BAC STI2D</span>
                             </a>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="ed-course-in">
-                            <a class="course-overlay" href="bts-cprp.php">
+                            <a class="course-overlay" href="bts-cprp.php"><!-- affichage de l'onglet avec une image pour chaque formation -->
                                 <img src="../images/site/cprp.jpg" alt="">
                                 <span>BTS CPRP</span>
                             </a>
@@ -116,7 +116,7 @@
     <!--SECTION END-->
 
     <!-- FOOTER -->
-    <section class="wed-hom-footer">
+    <section class="wed-hom-footer">  <!-- Footer-->
         <div class="container">
             <div class="row wed-foot-link">
                 <div class="col-md-4 foot-tc-mar-t-o">
@@ -167,7 +167,7 @@
     <!--END HEADER SECTION-->
 
     <!--SECTION LOGIN, REGISTER AND FORGOT PASSWORD-->
-    <section>
+    <section>   <!-- MODALE  -->
         <!-- LOGIN SECTION -->
         <div id="modal1" class="modal fade" role="dialog">
             <div class="log-in-pop">

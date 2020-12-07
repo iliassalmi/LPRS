@@ -38,7 +38,7 @@ require_once('../manager/manager.php');
 
 
     <!--SECTION START-->
-    <section>
+    <section> <!-- Affichage des offres d'alternance deposer   -->
         <div class="container com-sp pad-bot-70">
             <div class="row">
                 <div class="cor about-sp">
@@ -52,79 +52,49 @@ require_once('../manager/manager.php');
                     <div class="s18-age-event l-info-pack-days">
                         <ul>
                             <li>
-
-
                                     <?php
-
                                     $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
                                     $tab_requête = 'SELECT nom FROM evenement';
                                     $red = $bdd->query($tab_requête);
                                     $tableau =  $red->fetchall();
+                                    ?>
+                                    <?php
+                                    $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+                                    $tab_requête = 'SELECT description FROM evenement';
+                                    $red = $bdd->query($tab_requête);
+                                    $tab =  $red->fetchall();
+                                    ?>
+                                    <?php
 
-                                  ?>
-
-                                  <?php
-
-                                  $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
-                                  $tab_requête = 'SELECT description FROM evenement';
-                                  $red = $bdd->query($tab_requête);
-                                  $tab =  $red->fetchall();
-
-                                ?>
-
-
-
-                                <?php
-
-                                $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
-                                $tab_requête = 'SELECT duree FROM evenement';
-                                $red = $bdd->query($tab_requête);
-                                $tab1 =  $red->fetchall();
-
-                                ?>
-
+                                    $bdd = new PDO('mysql:host=localhost;dbname=lprs;charset=utf8','root','');
+                                    $tab_requête = 'SELECT duree FROM evenement';
+                                    $red = $bdd->query($tab_requête);
+                                    $tab1 =  $red->fetchall();
+                                    ?>
                                 <div class="age-eve-com age-eve-1">
                                     <img src="images/icon/awa/2.png" alt="">
                                 </div>
-
                                 <div class="s17-eve-time">
-
-
                                 <div class="s17-eve-time-tim">
                                     <?php echo $tab1[0][0] ." mois";?>
                                 </div>
-
-
-<!-- description du nom de l'entreprise de l'offre -->                  <div class="s17-eve-time-msg">
-                                        <?php echo $tableau[0][0]; ?>
-
-
-        <!-- description de l'offre d'alternance -->                              <div class="time-hide time-hide-2">
-
-<?php echo $tab[0][0]; ?>
-
-
-                                      </div>
-</div>
-</div>
-
+                                <!-- description du nom de l'entreprise de l'offre -->
+                                <div class="s17-eve-time-msg">
+                                <?php echo $tableau[0][0]; ?>
+                                <!-- description de l'offre d'alternance -->
+                                <div class="time-hide time-hide-2">
+                                <?php echo $tab[0][0]; ?>
+                                </div>
+                              </div>
+                            </div>
                                       <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
                                       <i class="fa fa-angle-down"></i>
                                       </a>
                                       <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
                                       <i class="fa fa-angle-up"></i>
-
                                       </a>
-
-
-
-
-
-
-
-
-                                                            </li>
-                            <li>
+                                    </li>
+                                    <li>
                                 <div class="age-eve-com age-eve-1">
                                     <img src="images/icon/awa/2.png" alt="">
                                 </div>
@@ -132,32 +102,21 @@ require_once('../manager/manager.php');
                                     <div class="s17-eve-time-tim">
                                         <?php echo $tab1[1][0] ." mois"; ?>
                                     </div>
-
                                     <div class="s17-eve-time-msg">
-<?php echo $tableau[1][0]; ?>
-
+                                      <?php echo $tableau[1][0]; ?>
                                    <div class="time-hide time-hide-2">
-
-<?php echo $tab[1][0]; ?>
-
-
+                                     <?php echo $tab[1][0]; ?>
                               </div>
-
                                     </div>
                                 </div>
-
-                                                                      <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
-                                                                      <i class="fa fa-angle-down"></i>
-                                                                      </a>
-                                                                      <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
-                                                                      <i class="fa fa-angle-up"></i>
-
-                                                                      </a>
-
+                                <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
+                                <i class="fa fa-angle-down"></i>
+                                </a>
+                                <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
+                                <i class="fa fa-angle-up"></i>
+                                </a>
                             </li>
                             <li>
-
-
                               <div class="age-eve-com age-eve-1">
                                   <img src="images/icon/awa/2.png" alt="">
                               </div>
@@ -165,33 +124,21 @@ require_once('../manager/manager.php');
                                   <div class="s17-eve-time-tim">
                                       <?php echo $tab1[2][0] ." mois"; ?>
                                   </div>
-
                                   <div class="s17-eve-time-msg">
-<?php echo $tableau[2][0]; ?>
-
+                                    <?php echo $tableau[2][0]; ?>
                                  <div class="time-hide time-hide-2">
-
-<?php echo $tab[2][0]; ?>
-
-
+                                   <?php echo $tab[2][0]; ?>
                             </div>
-
                                   </div>
                               </div>
-
-                                                                    <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
-                                                                    <i class="fa fa-angle-up"></i>
-
-                                                                    </a>
-
-
+                              <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
+                              <i class="fa fa-angle-down"></i>
+                              </a>
+                              <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
+                              <i class="fa fa-angle-up"></i>
+                              </a>
                             </li>
                             <li>
-
-
                               <div class="age-eve-com age-eve-1">
                                   <img src="images/icon/awa/2.png" alt="">
                               </div>
@@ -199,33 +146,21 @@ require_once('../manager/manager.php');
                                   <div class="s17-eve-time-tim">
                                       <?php echo $tab1[3][0] ." mois"; ?>
                                   </div>
-
                                   <div class="s17-eve-time-msg">
-<?php echo $tableau[3][0]; ?>
-
+                                    <?php echo $tableau[3][0]; ?>
                                  <div class="time-hide time-hide-2">
-
-<?php echo $tab[3][0]; ?>
-
-
-                            </div>
-
+                                   <?php echo $tab[3][0]; ?>
+                                 </div>
+                                    </div>
                                   </div>
-                              </div>
-
-                                                                    <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
-                                                                    <i class="fa fa-angle-up"></i>
-
-                                                                    </a>
-
-
+                                  <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
+                                  <i class="fa fa-angle-down"></i>
+                                  </a>
+                                  <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
+                                  <i class="fa fa-angle-up"></i>
+                                  </a>
                             </li>
                             <li>
-
-
                               <div class="age-eve-com age-eve-1">
                                   <img src="images/icon/awa/2.png" alt="">
                               </div>
@@ -233,39 +168,25 @@ require_once('../manager/manager.php');
                                   <div class="s17-eve-time-tim">
                                       <?php echo $tab1[4][0] ." mois"; ?>
                                   </div>
-
                                   <div class="s17-eve-time-msg">
-  <?php echo $tableau[4][0]; ?>
-
+                                    <?php echo $tableau[4][0]; ?>
                                  <div class="time-hide time-hide-2">
-
-  <?php echo $tab[4][0]; ?>
-
-
+                                   <?php echo $tab[4][0]; ?>
                             </div>
-
                                   </div>
                               </div>
-
-                                                                    <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
-                                                                    <i class="fa fa-angle-up"></i>
-
-                                                                    </a>
-
-
-                            </li>
-
-
+                            <a href="#!" class="s17-sprit age-dwarr-btn time-hide-2-btn">
+                           <i class="fa fa-angle-down"></i>
+                            </a>
+                            <a href="#!" class="s17-sprit age-dwarr-btn time-hide-22-btn hb-com">
+                          <i class="fa fa-angle-up"></i>
+                      </a>
+                      </li>
                 </div>
             </div>
         </div>
     </section>
     <!--SECTION END-->
-
-
     <!--SECTION START-->
     <section>
         <div class="full-bot-book">
